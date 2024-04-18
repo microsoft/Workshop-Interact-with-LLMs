@@ -1,0 +1,113 @@
+# Part 1 - Text Generation
+
+> [!TIP] What is prompt engineering?
+> Prompt engineering is a concept in Natural Language Processing (NLP) that involves **embedding descriptions of tasks** in input to **prompt the model** to output the **desired results**.
+
+## Basic prompting
+
+Let's start with a few prompts and observe the response using the chat interface. 
+
+Here are some examples to try, but get creative with your own prompts and see what happens!
+
+> [!NOTE]
+> Open the Notepad app and copy the model's responses you get at each step. You'll need them in a later stage.
+
+### Website copy and conversation history
+
+---
+**Enter in the user prompt**
+
+``
+Suggest a title for the website landing page of an e-commerce for outdoor gear and equipment called Contoso Outdoor Company.
+``
+
+---
+
+Without clearing the chat history, try now the following prompt:
+
+---
+**Enter in the user prompt**
+
+``
+Generate website copy for the homepage of the e-commerce website. 
+``
+
+---
+
+Note that the model is providing a copy for the *Contoso Outdoor Company* website, even if we didn't specify again the company name or business. This is because under the hoods the model is given the **whole conversation history** as context, not just the latest prompt. An AI model cannot learn and has no memory of previous interactions if the user leaves and comes back but the application is using prompt engineering to add this 'memory'. 
+
+To verify that, try clearing the chat history, enter the prompt again and check how the model's response changes.
+
+> [!NOTE]
+> In the Azure AI Studio Playground there's also a **Session Settings** option that allows you to control the context window size, which is the number of previous interactions that the model will consider as context (default is 10).
+
+### Summarization and key entities extraction
+
+The resulting copy we have got from the previous step is already a good starting point, but it might be too long for a landing page. Let's try to get a shorter version of it.
+
+Text summarization is a well known capability of LLMs - it creates a short summary of a larger piece of text. Add tl;dr (for "too long; didn't read") to gain a summary of the copy generated in the previous step.
+
+---
+**Enter in the user prompt**
+
+``
+tl;dr
+<AI Generated Website Copy>
+``
+
+---
+
+Similarly, you can instruct your LLM to extract key information from a text. In our scenario, this is useful to get keywords for **SEO optimization**. Try the prompt below, by replacing `<AI Generated Copy Summary>` with the text generated in the previous step.
+
+---
+**Enter in the user prompt**
+
+``
+Extract company name, categories of products and business unique values from the description below.
+<AI Generated Copy Summary>
+``
+
+---
+
+## Advanced prompting
+
+### Zero-shot learning
+
+LLMs are trained on such large amounts of data they may be able to perform some tasks with very little prompting. This is known as **zero-shot learning**. For example, now that we have the AI generated website copy, we can ask the model to translate it into a different language to enable localization, using the simple prompt below.
+
+---
+**Enter in the user prompt**
+
+``
+Translate the website copy into French.
+English: <AI Generated Website Copy>
+French:
+``
+
+---
+
+### Few-shot learning
+
+If zero-shot learning is failing for your examples and more complex tasks, few shot prompting can provide examples that can better steer the model to the desired outcomes. Examples show the model cleanly how we want it to operate. Here's an example of a few-shot learning prompt for translation.
+
+---
+**Enter in the user prompt**
+
+``
+English: Welcome to Contoso Outdoor Company, your one-stop shop for all your outdoor gear and equipment needs.
+French: Bienvenue chez Contoso Outdoor Company, votre guichet unique pour tous vos besoins en équipement et matériel de plein air.
+English: We offer a wide range of products, from camping gear to hiking equipment.
+French: Nous proposons une large gamme de produits, de l'équipement de camping à l'équipement de randonnée.
+English:
+``
+
+---
+
+### Chain of thought
+*Break the task down into smaller parts, e.g. welcome, business description, product descriptions*
+
+### System message and added knowledge
+*Add goal*
+*Safety measures*
+*Tone of voice*
+*Add knowledge of real products*
