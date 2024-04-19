@@ -21,4 +21,4 @@ The lab is organized into 3 sections, taking you through generating textual cont
 
 1. **Part 1 - Text Generation** Generate textual content and descriptions with GPT4-Turbo
 2. **Part 2 - Image Generation** Generate image assets with DALLE-3
-3. **Part 3 - Multimodality** Leverage multimodal capabilities of GPT-4 Turbo with Vision to generate code snippets from hand-drawn sketches
+3. **Part 3 - Multimodality** Leverage multimodal capabilities of GPT-4 Turbo with Vision to generate code snippets from hand-drawn sketches.
