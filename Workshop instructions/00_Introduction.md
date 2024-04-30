@@ -7,7 +7,7 @@
 
 By the end of this workshop, you should be able to:
 
- - Describe GPT model capabilities and implementation in the field of text generation, image generation and multimodal conversation.
+ - Describe OpenAI model capabilities and implementation in the field of text generation, image generation and multimodal conversation.
  - Understand prompt engineering concepts and best practices.
  - Leverage generative AI power and apply prompt engineering techniques to your own solutions.
 
