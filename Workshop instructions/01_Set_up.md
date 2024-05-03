@@ -56,24 +56,31 @@ We will now move to the Playground, where most of our work will be carried out.
 
 The Playground has different elements we will be interacting with, and as such it will be useful to get familiar with them.
 
-![Image of the Azure AI Studio Playground]()
+![Image of the Azure AI Studio Playground](./Images/ai-studio-playground.png)
 
 The most important element to look at is the Playground's **Mode**. This dictates what type of activity and deployment we will be carrying out. For our lab we will only focus on *Chat* and *Images*.
 
+> [!NOTE]
+> There is also playground modes designed for various type of scenarios, such as Assistants, Completions and others.
+
 ### Chat Mode
 
-![Image of Azure AI Studio Playground Chat Mode]()
+![Image of Azure AI Studio Playground Chat Mode](./Images/ai-studio-chatmode.png)
 
-1. System Message Box
-1. Chat Box
-1. Prompt Box
-1. Deployment and deployment settings
-1. Parameters
+1. **System Message Box**: Here is where we enter instructions for the model, previous to the user interaction.
+1. **Chat Box**: The chat box is where we will see our interactions with the model in the form of chat messages.
+1. **Prompt Box**: This is where we type the prompts we want to send to the model.
+1. **Deployment and deployment settings**: This section allows us to change between our deployed models, and set settings around it such as the message history.
+1. **Parameters**: This tab contains the models detailed settings, such as temperature.
 
 ### Images Mode
 
-![Image of Azure AI Studio Playground Images Mode]()
+![Image of Azure AI Studio Playground Images Mode](./Images/ai-studio-imagemode.png)
 
-1. Deployments
-1. Prompt Box
-1. Resulting Images
+1. **Deployments**: In this drop-down we are able to choose the model to prompt for image generation. These models, just like the chat ones, come from our deployments.
+1. **Prompt Box**: Similar to the chat mode box, this is where the models get their input from the user. In the case of images, descriptions of what we want to generate.
+1. **Results Box**: Finally, here is where the generated images are displayed.
+
+## Ready to start
+
+That covers the necessary setup and basics of Azure AI Studio. We will now move forward to begin interacting with the models. Ensure you are back to the **Chat** mode in the Playground, and go to the next section.
