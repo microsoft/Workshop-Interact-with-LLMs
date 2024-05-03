@@ -1,15 +1,24 @@
 # Get started
 
 > [!TIP]
-> What is Azure AI Studio? Azure AI Studio is a cloud-based service that makes it easy for developers of all skills levels to build AI applications. It provides a single place to do everything you need to build an AI application, including loading data, preparing it for training, training a model and deploying the model to production.
+> What is **Azure AI Studio**? Azure AI Studio is a cloud-based service that makes it easy for developers of all skills levels to build AI applications. It provides a single place to do everything you need to build an AI application, including loading data, preparing it for training, training a model and deploying the model to production.
 
-For this workshop we will be working on Azure AI Studio, especially focusing on the playground feature. We can access AI Studio by opening the browser and visiting https://ai.azure.com
+As a first step, login into the lab VM by using these credentials:
+- Username: will already be set to Admin.
+- Password: enter +++@lab.VirtualMachine(Win11Base23B-W11-22H2).Password+++ and click.
+
+> [!TIP]
+>  First time using **Skillable?** The green "T" (e.g., +++Admin+++) indicates values that are automatically input for you at the current cursor location in VM, with one click. This reduces your effort and minimizes input errors.
+   
+For this workshop we will be working on Azure AI Studio, especially focusing on the playground feature. We can access AI Studio by opening the Edge Browser and visiting +++https://ai.azure.com+++.
 
 ![Homepage of AI Studio](./Images/ai-studio-homepage.png)
 
 ## Navigating AI Studio
 
-Let's start by clicking on **Sign In** and entering the provided Microsoft account and the provided password. For this you can simply click on the Green **T** logo. The environment will fill it in for you.
+Let's start by clicking on **Sign In** and entering the following credentials:
+-  User: +++@lab.CloudPortalCredential(User1).Username+++
+-  Password: +++@lab.CloudPortalCredential(User1).Password+++
 
 Now that we are logged in, we can start navigating the platform. Let's start with the **Explore** tab.
 
