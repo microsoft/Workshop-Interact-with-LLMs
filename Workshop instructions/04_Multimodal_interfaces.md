@@ -7,7 +7,7 @@ Before starting, make sure your playground is configured as follow:
 - Deployment: gpt-4-turbo-vision
 
 > [!TIP]
-> GPT4 turbo with vision is a multimodal model that incorporates both natural language processing and visual understanding. It is able to process as input a combination of text and images, and generate an output which is relevant to both modalities.
+> **GPT4 turbo with vision** is a multimodal model that incorporates both natural language processing and visual understanding. It is able to process as input a combination of text and images, and generate an output which is relevant to both modalities.
 
 ## Generate a code snippet for the website UI from an image
 
@@ -33,8 +33,8 @@ Feel free to use the remaining time to adjust the code template according to the
 
 If you are not satisfied with the result you got in the previous step, you can apply some prompt tuning techniques to improve the quality of the generated code. In fact, the prompt you have used to instruct the model in the previous step already contains some prompt engineering best practices, such as *placing the image before the text* and specifying the *output format*. However, you can try to further refine the prompt to get better results.
 
-> [!TIP]
-> If the model indicates an inability to perform the task, you can handle the refusal by requesting explanations for generated responses and what kind of information it misses to compete the task.
+> [!NOTE]
+> If the model indicates an inability to perform the task, you can **handle the refusal** by requesting explanations for generated responses and what kind of information it misses to compete the task.
 
 In the System message field insert the text below, then click "Apply changes".
 
@@ -43,7 +43,7 @@ In the System message field insert the text below, then click "Apply changes".
 You are a web designer for the Contoso Outdoor Company e-commerce website. Your goal is to generate the website code snippets for the homepage GUI.
 ```
 
-In addition, let's modify the previous query, by breaking down the instructions into smaller steps, using a 'Chain of thought' approach. This will help the model to better understand the task and generate more accurate results. Clear the chat history and send the following text to the chat interface:
+In addition, let's modify the previous query, by breaking down the instructions into smaller steps. This will help the model to better understand the task and generate more accurate results. Clear the chat history and send the following text to the chat interface:
 
 ```
 You will generate the website GUI template for the homepage of the e-commerce website.
@@ -52,3 +52,5 @@ Instructions:
 2. Use html and bootstrap as output format
 3. Add placeholders for products images
 ```
+
+Congratulations! You have now completed the 3rd and last part of the lab and you learnt how to interact with multimodal models. Click next to wrap up the lab.

@@ -26,7 +26,7 @@ Suggest a tagline for the website landing page of an e-commerce for outdoor clot
 Without clearing the chat history, try now the following prompt:
 
 ```
-Generate website copy for the homepage of the e-commerce website.s
+Generate website copy for the homepage of the e-commerce website.
 ```
 
 Note that the model is providing a copy for the *Contoso Outdoor Company* website, even if we didn't specify again the company name or business. This is because under the hoods the model is given the **whole conversation history** as context, not just the latest prompt. An AI model cannot learn and has no memory of previous interactions if the user leaves and comes back but the application is using prompt engineering to add this 'memory'. 

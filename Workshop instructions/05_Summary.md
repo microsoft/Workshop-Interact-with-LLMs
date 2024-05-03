@@ -1,4 +1,4 @@
-Congratulations! You made it to the end of the workshop and you have successfully built an e-commerce website design for Contoso Outdoor Company, leveraging the power of generative AI.
+Well done! You made it to the end of the workshop and you have successfully built an e-commerce website design for Contoso Outdoor Company, leveraging the power of generative AI.
 
 ## Some key points to remember
  - Generative AI models can generate human like text, images, and code
