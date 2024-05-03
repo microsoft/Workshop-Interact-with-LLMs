@@ -1,8 +1,8 @@
 # Part 2 - Image Generation
 
 Welcome to part 2 of this workshop, where we will interact with a text-to-image model, Dall-E 3.0. For this we will change from the Chat playground to the Images Playground and ensure that :
-    - Mode: Image
-    - Model: dall-e-3
+- Mode: Image
+- Model: dall-e-3
 
 ## Creating our first images
 
@@ -129,8 +129,6 @@ A down-filled, insulated winter jacket in deep blue
 ```
 
 <img src="./Images/A%20waterproof,%20breathable%20rain%20jacket%20in%20bright%20yellow.png" alt="Image 1" width="200"> <img src="./Images/A%20pair%20of%20rugged,%20cargo%20hiking%20pants%20in%20olive%20green.png" alt="Image 2" width="200"> <img src="./Images/A%20down-filled,%20insulated%20winter%20jacket%20in%20deep%20blue.png" alt="Image 3" width="200">
-
-## End
 
 Congratulations! You have now completed the second part of the lab, and have generated the necessary image assets for the *Contoso Outdoors Company* e-commerce website.
 
