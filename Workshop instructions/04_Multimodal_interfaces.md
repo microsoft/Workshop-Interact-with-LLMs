@@ -1,4 +1,4 @@
-# Part 4 - Multimodal interfaces
+# Part 3 - Multimodal interfaces
 
 By now we interacted with LLMs using a single modality: inputing text and receiving either text or images. However, multimodal interfaces are becoming increasingly popular, as they allow users to interact with models using multiple modalities, such as text, images, and speech- thus facilitating human-computer interactions. In this section, we will explore how to use multimodal interfaces to interact with GPT4 turbo with vision.
 
