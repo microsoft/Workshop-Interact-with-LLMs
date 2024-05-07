@@ -41,8 +41,7 @@ A purple elephant on a skateboard performing an olley, in the style of of Picass
 
 Select **Generate** once again and compare the results. 
 
-
-<img src="./Images/An%20elephant%20on%20a%20skateboard.png" width="200"> <img src="./Images/A%20purple%20elephant%20on%20a%20skateboard%20performing%20an%20olley,%20in%20the%20style%20of%20of%20Picasso.png" width="200">
+![Image of an elephant riding a skateboard](./Images/An%20elephant%20on%20a%20skateboard.png) ![Image of a purple elephant riding a skateboard in the style of Pablo Picasso](./Images/A%20purple%20elephant%20on%20a%20skateboard%20performing%20an%20olley,%20in%20the%20style%20of%20of%20Picasso.png)
 
 ### Best practices
 
@@ -90,7 +89,7 @@ A robust, 8-person tent set up in the middle of an autumn forest
 A small tent in the middle of a storm
 ```
 
-<img src="./Images/A%20simple%20brown%20tent%20made%20out%20of%20polyester.png" width="200"> <img src="./Images/A%20robust,%208-person%20tent%20set%20up%20in%20the%20middle%20of%20an%20autumn%20forest.png" width="200"> <img src="./Images/A%20small%20tent%20in%20the%20middle%20of%20a%20storm.png" width="200">
+![Image of a brown tent](./Images/A%20simple%20brown%20tent%20made%20out%20of%20polyester.png) ![Image of a tent in an autumn forest](./Images/A%20robust,%208-person%20tent%20set%20up%20in%20the%20middle%20of%20an%20autumn%20forest.png) ![Image of a tent caught in the middle of a storm](./Images/A%20small%20tent%20in%20the%20middle%20of%20a%20storm.png)
 
 Next, let's try generating the backpacks. As before, feel free to adjust and get creative with your prompts!
 
@@ -109,7 +108,7 @@ A large, 70-liter backpacking pack fully loaded with camping gear
 A small, realistic lightweight daypack
 ```
 
-<img src="./Images/A%20compact%20hiking%20backpack%20in%20vibrant%20red%20color.png" alt="Image 1" width="200"> <img src="./Images/A%20large,%2070-liter%20backpacking%20pack%20fully%20loaded%20with%20camping%20gear.png" alt="Image 2" width="200"> <img src="./Images/A%20small,%20realistic%20lightweight%20daypack.png" alt="Image 3" width="200">
+![Image of a compact red hiking backpack](./Images/A%20compact%20hiking%20backpack%20in%20vibrant%20red%20color.png) ![Image of a large fully-loaded backpack for camping](./Images/A%20large,%2070-liter%20backpacking%20pack%20fully%20loaded%20with%20camping%20gear.png) ![Image of a small daypack](./Images/A%20small,%20realistic%20lightweight%20daypack.png)
 
 Lastly, let's generate the images for Hiking Clothing.
 
@@ -128,7 +127,7 @@ A pair of rugged, cargo hiking pants in olive green
 A down-filled, insulated winter jacket in deep blue
 ```
 
-<img src="./Images/A%20waterproof,%20breathable%20rain%20jacket%20in%20bright%20yellow.png" alt="Image 1" width="200"> <img src="./Images/A%20pair%20of%20rugged,%20cargo%20hiking%20pants%20in%20olive%20green.png" alt="Image 2" width="200"> <img src="./Images/A%20down-filled,%20insulated%20winter%20jacket%20in%20deep%20blue.png" alt="Image 3" width="200">
+![Image of a yellow rainjacket](./Images/A%20waterproof,%20breathable%20rain%20jacket%20in%20bright%20yellow.png) ![Image of a pair of olive green cargo pants](./Images/A%20pair%20of%20rugged,%20cargo%20hiking%20pants%20in%20olive%20green.png) ![Image of an insulated winter jacket](./Images/A%20down-filled,%20insulated%20winter%20jacket%20in%20deep%20blue.png)
 
 Congratulations! You have now completed the second part of the lab, and have generated the necessary image assets for the *Contoso Outdoors Company* e-commerce website.
 
