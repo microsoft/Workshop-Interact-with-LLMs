@@ -28,6 +28,16 @@ Generate the html and bootstrap code to implement the UI of the Contoso Outdoor 
 ```
 
 The outcome should provide a basic layout for the landing page of Contoso Outdoor Company. It includes placeholders for product descriptions, which you can populate with the text and image artifacts created throughout part 1 and 2.
+
+If you want to view the code syntax is correct and what the template looks like:
+1. Open VS Code on the VM
+2. File - New file - type website.html (save it to the desktop of the VM)
+3. Paste the HTML code generated into the empty html file
+4. Select VS Code extensions on the left bar, and install 'HTML Preview'
+5. Select the 'Open preview' button on the top right of VS Code to view the output
+
+![Preview website code in VS Code](./Images/vs-code-view-html.png).
+
 Feel free to use the remaining time to adjust the code template according to the final design you wish to achieve.
 
 ## Apply Prompt Tuning
