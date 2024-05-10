@@ -15,7 +15,7 @@ Let's start with a few prompts and observe the response using the chat interface
 Here are some examples to try, but get creative with your own prompts and see what happens!
 
 > [!NOTE]
-> Open the Notepad app and copy the model's responses you get at each step. You'll need them in a later stage.
+> Open the Notepad app in the VM and copy the model's responses you get at each step. You'll need to include them in later prompts.
 
 ### Website copy and conversation history
 
@@ -29,9 +29,9 @@ Without clearing the chat history, try now the following prompt:
 Generate website copy for the homepage of the e-commerce website.
 ```
 
-Note that the model is providing a copy for the *Contoso Outdoor Company* website, even if we didn't specify again the company name or business. This is because under the hoods the model is given the **whole conversation history** as context, not just the latest prompt. An AI model cannot learn and has no memory of previous interactions if the user leaves and comes back but the application is using prompt engineering to add this 'memory'. 
+Note that the model is providing a copy for the *Contoso Outdoor Company* website, even if we didn't specify again the company name or business. This is because under-the-hood the model is given the **whole conversation history** as context, not just the latest prompt. An AI model cannot learn and has no memory of previous interactions if the user leaves and comes back, but the application is using prompt engineering to add this 'memory'.
 
-To verify that, try clearing the chat history, enter the prompt again and check how the model's response changes.
+To verify this, try clearing the chat history, enter the prompt again and check how the model's response changes.
 
 > [!NOTE]
 > In the Azure AI Studio Playground there's also a **Session Settings** option that allows you to control the context window size, which is the number of previous interactions that the model will consider as context (default is 10).
@@ -40,14 +40,14 @@ To verify that, try clearing the chat history, enter the prompt again and check 
 
 The resulting copy we have got from the previous step is already a good starting point, but it might be too long for a landing page. Let's try to get a shorter version of it.
 
-Text summarization is a well known capability of LLMs - it creates a short summary of a larger piece of text. Add tl;dr (for "too long; didn't read") to gain a summary of the copy generated in the previous step.
+Text summarization is a well known capability of Large Language Models (LLMs). It creates a short summary of a larger piece of text. Add tl;dr (for "too long; didn't read") to gain a summary of the copy generated in the previous step. Use the results you copied to your notepad.
 
 ```
 tl;dr
 <AI Generated Website Copy>
 ```
 
-Similarly, you can instruct your LLM to extract key information from a text. In our scenario, this is useful to get keywords for **SEO optimization**. Try the prompt below, by replacing `<AI Generated Copy Summary>` with the text generated in the previous step.
+Similarly, you can instruct your LLM to extract key information from text. In our scenario, this is useful to get keywords for **SEO optimization**. Try the prompt below, by replacing `<AI Generated Copy Summary>` with the text generated in the previous step.
 
 ```
 Extract company name, categories of products and business unique values from the description below.
@@ -91,7 +91,7 @@ Instructions:
 - Write a short description for each of the following product categories: tents, backpacks, hiking clothing, sleeping bags.
 ```
 
-Another option is using a technique - called **chain of thought** - where the LLM is responsible for breaking the task down into smaller steps. The LLM uses its knowledge of the world and its ability to reason. The LLM then generates a chain of thoughts that leads to the solution of the task.
+Another option is using a technique - called **chain of thought** where the LLM is responsible for breaking the task down into smaller steps. The LLM uses its knowledge of the world and its ability to reason. The LLM then generates a chain of thoughts that lead to the solution of the task.
 Clear the playground chat again and then enter the user prompt below to see 'Chain of thought prompting' in action:
 
 ```
@@ -117,7 +117,7 @@ Your answer should be brief and engaging. Always use a friendly and professional
 In the copies you write always stick to the subject of the company and the products it offers. Avoid any irrelevant information and controversial opinions.
 ```
 
-Observe that we have provided the model with a **clear task**, a **tone of voice**, and **safety measures** to follow. Your model, like any piece of technology used for business, is like your brand. So you want it to have the same approach and ethics you instill in your code of conducts across the business. Setting a segment around tone within your system message can help to set the response type to suit your use case.
+Observe that we have provided the model with a **clear task**, a **tone of voice**, and **safety measures** to follow. Your model, like any piece of technology used for business, is like your brand, if you want it to have the same approach and ethics you instill in your code of conduct across the business the it should be included for your AI solutions also. Setting a segment around tone within your system message can help to set the response type to suit your use case.
 
 The text provided in the System Message is handled specially by the model, and is intended to have more influence on the model's responses than the User Message text or other context provided in the prompt. Also, it is persisted across all the interactions in the chat, even if you clear the chat history.
 
@@ -129,10 +129,10 @@ Write a brief description of the business, including the categories of products 
 
 ### Grounded prompting
 
-In the copies we have generated so far, the model has been creative in inventing a business value proposition and product offering. However, in real-world scenarios, we want the model to generate text that is grounded in reality and reflects the actual business. To achieve this, we can use a technique called **Retrieval Augmented Generation**. This technique involves providing the model with a set of facts or information about the business, which the model can then use to generate more accurate and relevant text. 
+In the website copy we have generated so far, the model has been creative in inventing a business value proposition and product offering. However, in real-world scenarios, we want the model to generate text that is grounded in reality and reflects the actual business. To achieve this, we can use a technique called **Retrieval Augmented Generation (RAG)**. This technique involves providing the model with a set of facts or information about the business, which the model can then use to generate more accurate and relevant text.
 
 > [!NOTE]
-> **Retrieval-Augmented Generation** (RAG) is an AI technique that combines a language model with a search system to provide more accurate and detailed information. In a RAG pattern, the system usually retrieves relevant information from a database and then uses it to help generate more informed and contextually accurate text responses. For the sake of this lab, we will simulate the retrieval process by providing the model with a set of facts about the business in the prompt.
+> **Retrieval-Augmented Generation (RAG)** is an AI technique that combines a language model with a search system to provide more accurate and detailed information. In a RAG pattern, the system usually retrieves relevant information from a database and then uses it to help generate more informed and contextually accurate text responses. For the sake of this lab, we will simulate the retrieval process, by providing the model with a set of facts about the business in the prompt.
 
 Added knowledge can be provided always through the System message. So, let's add to the current System message the information below, and then click "Apply changes".
 
@@ -162,4 +162,5 @@ To see how the model's behavior changes with the added context, try the prompt b
 ```
 Write a short description for each of the following product categories: tents, backpacks, hiking clothing.
 ```
+
 Congratulations, you have completed the first part of the lab! You have learned how to use prompt engineering to generate text using a language model. In the next part of the lab, you will learn how to use the model to generate image assets.
