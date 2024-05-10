@@ -1,7 +1,8 @@
 # Get started
 
 > [!TIP]
-> What is **Azure AI Studio**? Azure AI Studio is a cloud-based service that makes it easy for developers of all skills levels to build AI applications. It provides a single place to do everything you need to build an AI application, including loading data, preparing it for training, training a model and deploying the model to production.
+> What is **Azure AI Studio**? Azure AI Studio is designed for developers to build generative AI applications on an enterprise-grade platform. Developers can interact with their projects code-first via the Azure AI SDK, explore, build, test, and deploy AI models using cutting-edge tooling, and collaborate in a secure environment.
+The platform supports transforming proof of concepts into production-ready solutions with continuous monitoring and refinement.
 
 As a first step, login into the lab VM by using these credentials:
 - Username: will already be set to Admin.
