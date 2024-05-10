@@ -1,6 +1,6 @@
 # Part 3 - Multimodal interfaces
 
-By now we interacted with LLMs using a single modality: inputing text and receiving either text or images. However, multimodal interfaces are becoming increasingly popular, as they allow users to interact with models using multiple modalities, such as text, images, and speech- thus facilitating human-computer interactions. In this section, we will explore how to use multimodal interfaces to interact with GPT4 turbo with vision.
+By now we have interacted with LLMs using a single modality: inputting text and receiving either text or images. However, multimodal interfaces are becoming increasingly popular, as they allow users to interact with models using multiple modalities, such as text, images, and speech, thus facilitating human-computer interactions. In this section, we will explore how to use multimodal interfaces to interact with GPT4 turbo with vision.
 
 Before starting, make sure your playground is configured as follow:
 - Mode: Chat
@@ -11,7 +11,8 @@ Before starting, make sure your playground is configured as follow:
 
 ## Generate a code snippet for the website UI from an image
 
-From the chat interface, click on the attachement icon to upload a local image and then select the *contoso_outdoor_ecommerce_sketch_notes.jpg* image from the local Desktop folder.
+From the chat interface, click on the attachment icon to upload a local image and then select the *contoso_outdoor_ecommerce_sketch_notes.jpg* image from the local Desktop folder.
+Folder Path: Documents\Workshop-Interact-with-LLMs\Workshop instructions\Images\contoso_outdoor_ecommerce_sketch_notes.jpg
 
 ![Uploading image as input](./Images/upload_image_icon.png)
 
@@ -21,12 +22,22 @@ If you cannot find the image on the local Desktop of your VM, you can download i
 
 This image represents a sketch of our Contoso Outdoor e-commerce website we want to build. We will use this image as input to GPT4 turbo with vision to generate a code snippet for the website, using the sketch as a reference.
 
-Once you uploaded the file, add the below text to instruct the model on how to use the image input:
+Once you have uploaded the file, add the text below to instruct the model on how to use the image input:
 ```
 Generate the html and bootstrap code to implement the UI of the Contoso Outdoor Company e-commerce landing page, based on the hand-drawn sketches in the image.
 ```
 
-The outcome should provide a basic layout for the landing page of Contoso Outdoor Company. It includes placeholders for product descriptions, which you can populate with the textual and image artifacts created throughout part 1 and 2.
+The outcome should provide a basic layout for the landing page of Contoso Outdoor Company. It includes placeholders for product descriptions, which you can populate with the text and image artifacts created throughout part 1 and 2.
+
+If you want to view the code syntax is correct and what the template looks like:
+1. Open VS Code on the VM
+2. File - New file - type website.html (save it to the desktop of the VM)
+3. Paste the HTML code generated into the empty html file
+4. Select VS Code extensions on the left bar, and install 'HTML Preview'
+5. Select the 'Open preview' button on the top right of VS Code to view the output
+
+![Preview website code in VS Code](./Images/vs-code-view-html.png).
+
 Feel free to use the remaining time to adjust the code template according to the final design you wish to achieve.
 
 ## Apply Prompt Tuning

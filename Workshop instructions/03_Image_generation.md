@@ -1,6 +1,6 @@
 # Part 2 - Image Generation
 
-Welcome to part 2 of this workshop, where we will interact with a text-to-image model, Dall-E 3.0. For this we will change from the Chat playground to the Images Playground and ensure that :
+Welcome to part 2 of this workshop, where we will interact with a text-to-image model, Dall-E 3.0. For this we will change from the Chat playground to the Images Playground. In the Playground window please ensure that:
 - Mode: Image
 - Model: dall-e-3
 
@@ -39,7 +39,7 @@ Now, let's modify the prompt by adding more details to the description:
 A purple elephant on a skateboard performing an olley, in the style of of Picasso
 ```
 
-Select **Generate** once again and compare the results. 
+Select **Generate** once again and compare the results.
 
 ![Image of an elephant riding a skateboard](./Images/An%20elephant%20on%20a%20skateboard.png) ![Image of a purple elephant riding a skateboard in the style of Pablo Picasso](./Images/A%20purple%20elephant%20on%20a%20skateboard%20performing%20an%20olley,%20in%20the%20style%20of%20of%20Picasso.png)
 
@@ -53,7 +53,7 @@ To create effective and accurate images with DALL-E, here are some best practice
 
 1. **Balance detail with simplicity**: While details are important, overly complicated or contradictory prompts can confuse the AI, leading to unexpected results. Aim for a balance where your description provides enough context without being overly convoluted.
 
-1. **Experiment with different styles**: Specify artistic styles or influences if you want your image to have a particular aesthetic. For example, you could ask for an image in the style of Van Gogh or a futuristic concept art.
+1. **Experiment with different styles**: Specify artistic styles or influences if you want your image to have a particular aesthetic. For example, you could ask for an image in the style of Van Gogh or futuristic concept art.
 
 1. **Iterative approach**: Often, the first image generated may not be perfect. Use it as a starting point and iteratively refine your prompt based on the output to get closer to your desired result.
 
@@ -71,10 +71,10 @@ To create effective and accurate images with DALL-E, here are some best practice
 
 For this workshop, we will leverage the capabilities of DALL-E to create a catalog of items for the *Contoso Outdoor Company* e-commerce website.
 
-Let's begin with creating images for the tents. 
+Let's begin by creating images of tents
 
 > [!NOTE]
->The tents offered are the TrailMaster X4 Tent, the Alpine Explorer Tent and the SkyView 2-Person Tent. 
+>The tents offered are the TrailMaster X4 Tent, the Alpine Explorer Tent and the SkyView 2-Person Tent.
 
 To generate these, try variations of these prompts (get creative and adjust them as you see fit!):
 ```
@@ -91,7 +91,7 @@ A small tent in the middle of a storm
 
 ![Image of a brown tent](./Images/A%20simple%20brown%20tent%20made%20out%20of%20polyester.png) ![Image of a tent in an autumn forest](./Images/A%20robust,%208-person%20tent%20set%20up%20in%20the%20middle%20of%20an%20autumn%20forest.png) ![Image of a tent caught in the middle of a storm](./Images/A%20small%20tent%20in%20the%20middle%20of%20a%20storm.png)
 
-Next, let's try generating the backpacks. As before, feel free to adjust and get creative with your prompts!
+Next, let's try generating backpacks. As before, feel free to adjust and get creative with your prompts!
 
 > [!NOTE]
 > The backpacks offered are the Adventurer Pro Backpack, the SummitClimber Backpack and the TrailLite Daypack.
@@ -110,7 +110,7 @@ A small, realistic lightweight daypack
 
 ![Image of a compact red hiking backpack](./Images/A%20compact%20hiking%20backpack%20in%20vibrant%20red%20color.png) ![Image of a large fully-loaded backpack for camping](./Images/A%20large,%2070-liter%20backpacking%20pack%20fully%20loaded%20with%20camping%20gear.png) ![Image of a small daypack](./Images/A%20small,%20realistic%20lightweight%20daypack.png)
 
-Lastly, let's generate the images for Hiking Clothing.
+Lastly, let's generate images for Hiking clothing.
 
 > [!NOTE]
 > The hiking clothing listed as part of the inventory are the Summit Breeze Jacket, the TrailBlaze Hiking Pants and the RainGuard Hiking Jacket.
@@ -130,4 +130,3 @@ A down-filled, insulated winter jacket in deep blue
 ![Image of a yellow rainjacket](./Images/A%20waterproof,%20breathable%20rain%20jacket%20in%20bright%20yellow.png) ![Image of a pair of olive green cargo pants](./Images/A%20pair%20of%20rugged,%20cargo%20hiking%20pants%20in%20olive%20green.png) ![Image of an insulated winter jacket](./Images/A%20down-filled,%20insulated%20winter%20jacket%20in%20deep%20blue.png)
 
 Congratulations! You have now completed the second part of the lab, and have generated the necessary image assets for the *Contoso Outdoors Company* e-commerce website.
-

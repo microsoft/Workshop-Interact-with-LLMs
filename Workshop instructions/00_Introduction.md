@@ -9,16 +9,16 @@ By the end of this workshop, you should be able to:
 
  - Describe OpenAI model capabilities and implementation in the field of text generation, image generation and multimodal conversation.
  - Understand prompt engineering concepts and best practices.
- - Leverage generative AI power and apply prompt engineering techniques to your own solutions.
+ - Leverage generative AI capabilities and apply prompt engineering techniques to your own solutions.
 
 ## Lab Scenario
 
-You are a developer at *Contoso Outdoor Company*, a leading e-commerce company that sells outdoor gear and equipment. Your team is working on a new website design and you have been tasked with generating textual content, images, and code snippets for the website. You have heard about the power of generative AI models and want to explore how you can leverage them to generate content for the website.
+You are a developer at *Contoso Outdoor Company*, a leading e-commerce company that sells outdoor gear and equipment. Your team is working on a new website design and you have been tasked with generating text content, images, and code snippets for the website. You have heard about the power of generative AI models and want to explore how you can leverage them to generate content for the website.
 
 ## Lab Outline
 
-The lab is organized into 3 sections, taking you through generating textual content, images assets, and code snippet through a multimodal conversation interface on Azure with OpenAI models. The end goal of the lab is to leverage generative AI to build the GUI components for the *Contoso Outdoor Company* e-commerce website.
+The lab is organized into 3 sections, taking you through generating text content, image assets, and code snippets through a multimodal conversational interface on Azure with OpenAI models. The goal of the lab is to leverage generative AI to build the user interface components for the *Contoso Outdoor Company* e-commerce website.
 
-1. **Part 1 - Text Generation** Generate textual content and descriptions with GPT4-Turbo
+1. **Part 1 - Text Generation** Generate text content and descriptions with GPT4-Turbo
 2. **Part 2 - Image Generation** Generate image assets with DALLE-3
 3. **Part 3 - Multimodality** Leverage multimodal capabilities of GPT-4 Turbo with Vision to generate code snippets from hand-drawn sketches.
