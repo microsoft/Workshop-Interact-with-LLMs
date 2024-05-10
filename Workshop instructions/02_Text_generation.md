@@ -68,14 +68,16 @@ French:
 
 ### Few-shot learning
 
-If zero-shot learning is failing for your examples and more complex tasks, **few shot prompting** can provide examples that can better steer the model to the desired outcomes. Examples show the model cleanly how we want it to operate. Here's an example of a few-shot learning prompt for translation.
+If zero-shot learning is failing for your examples and more complex tasks, **few shot prompting** can provide examples that can better steer the model to the desired outcomes. Examples show the model cleanly how we want it to operate. Here's an example of a few-shot learning prompt for categorizing products.
 
 ```
-English: Welcome to Contoso Outdoor Company, your one-stop shop for all your outdoor gear and equipment needs.
-French: Bienvenue chez Contoso Outdoor Company, votre guichet unique pour tous vos besoins en équipement et matériel de plein air.
-English: We offer a wide range of products, from camping gear to hiking equipment.
-French: Nous proposons une large gamme de produits, de l'équipement de camping à l'équipement de randonnée.
-English:
+Create a list of 20 product names this store might sell include the type of item:  
+  
+RidgeRunner Pro Trekking Poles :EQUIPMENT  
+SummitShield 3-Season Tent :EQUIPMENT  
+CascadeTech StormProof Jacket :APPAREL  
+TerraFirm 40L Daypack : EQUIPMENT  
+AlpineGlow Solar Lantern: EQUIPMENT
 ```
 
 ### Chain of thought prompting
