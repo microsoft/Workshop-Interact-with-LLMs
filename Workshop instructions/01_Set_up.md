@@ -1,8 +1,7 @@
 # Get started
 
 > [!TIP]
-> What is **Azure AI Studio**? Azure AI Studio is designed for developers to build generative AI applications on an enterprise-grade platform. Developers can interact with their projects code-first via the Azure AI SDK, explore, build, test, and deploy AI models using cutting-edge tooling, and collaborate in a secure environment.
-The platform supports transforming proof of concepts into production-ready solutions with continuous monitoring and refinement.
+> What is **Azure AI Studio**? Azure AI Studio is designed for developers to build generative AI applications on an enterprise-grade platform. Developers can interact with their projects code-first via the Azure AI SDK, explore, build, test, and deploy AI models using cutting-edge tooling, and collaborate in a secure environment. The platform supports transforming proof of concepts into production-ready solutions with continuous monitoring and refinement.
 
 As a first step, login into the lab VM by using these credentials:
 - Username: will already be set to Admin.
@@ -41,15 +40,7 @@ This tab allows us to manage our assets, permissions, deployments and data setti
 
 ![Image showcasing the Build tab, where a big button reads "New Project" and a message bubble indicates "Start with a Project."](./Images/ai-studio-buildpage.png)
 
-#### Creating our Project 
-For this lab, we will need to create a project. This can be done as follows:
-
-1. Click on the **+ New Project** button.
-1. On the pop up window, feel free to name your project to your liking, and under the **Hub** field select the already created hub: ![Image](./Images/ai-studio-createproj.png)
-1. Click on **Create Project**
-1. Once the project is created, you will be taken to the project's overview page. Here we can access all the major details of the projects, such as endpoints, quotas and more. We will revisit this later on.
-
-For now, we will move on to the Manage Tab.
+You will notice we have a project created already. This is intentional and we will be working with it in the upcopming sections. For now, we will move to the **Manage** tab.
 
 ### Manage Tab
 

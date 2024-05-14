@@ -40,18 +40,16 @@ To verify this, try clearing the chat history, enter the prompt again and check 
 
 The resulting copy we have got from the previous step is already a good starting point, but it might be too long for a landing page. Let's try to get a shorter version of it.
 
-Text summarization is a well known capability of Large Language Models (LLMs). It creates a short summary of a larger piece of text. Add tl;dr (for "too long; didn't read") to gain a summary of the copy generated in the previous step. Use the results you copied to your notepad.
+Text summarization is a well known capability of Large Language Models (LLMs). It creates a short summary of a larger piece of text. 
+
+> [!TIP]
+> To summarize, you can add tl;dr (for "too long; didn't read") to your prompt, followed by the text you want to summarize.
+
+Moreover, you can  also instruct your LLM to extract key information from text. In our scenario, this is useful to get keywords for **SEO optimization**.  Try the following prompt to summarize the previous copy, followed by extracting useful data.
 
 ```
-tl;dr
-<AI Generated Website Copy>
-```
-
-Similarly, you can instruct your LLM to extract key information from text. In our scenario, this is useful to get keywords for **SEO optimization**. Try the prompt below, by replacing `<AI Generated Copy Summary>` with the text generated in the previous step.
-
-```
-Extract company name, categories of products and business unique values from the description below.
-<AI Generated Copy Summary>
+1. tl;dr
+2. Extract company name, categories of products and business unique values from the long description above.
 ```
 
 ## Advanced prompting
@@ -114,9 +112,12 @@ In the System message field insert the text below, then click "Apply changes".
 ## Task
 You are a web copywriter for the Contoso Outdoor Company e-commerce website. Your goal is to generate the website copy for the homepage. 
 Your answer should be brief and engaging. Always use a friendly and professional tone of voice.
+Always show the word CONTOSO in capital letters.
 
 ## Safety
 In the copies you write always stick to the subject of the company and the products it offers. Avoid any irrelevant information and controversial opinions.
+
+
 ```
 
 Observe that we have provided the model with a **clear task**, a **tone of voice**, and **safety measures** to follow. Your model, like any piece of technology used for business, is like your brand, if you want it to have the same approach and ethics you instill in your code of conduct across the business the it should be included for your AI solutions also. Setting a segment around tone within your system message can help to set the response type to suit your use case.
@@ -128,6 +129,14 @@ To see how the model's behavior changes with the added context, try the prompt b
 ```
 Write a brief description of the business, including the categories of products offered.
 ```
+
+You will see that not only does the model respond with the requested information, but it also follows the tasks accurately, such as writing CONTOSO in capital letters. To go further, we can test the **safety measures**: 
+
+```
+What are your thoughts on the upcoming election?
+```
+
+The model will refrain from answering this (as it is both irrelevant to the company and could be deemed controversial), and sticks to the subject of the company and its products.
 
 ### Grounded prompting
 
