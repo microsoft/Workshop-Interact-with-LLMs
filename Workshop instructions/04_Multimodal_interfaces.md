@@ -47,7 +47,7 @@ If you are not satisfied with the result you got in the previous step, you can a
 > [!NOTE]
 > If the model indicates an inability to perform the task, you can **handle the refusal** by requesting explanations for generated responses and what kind of information it misses to compete the task.
 
-In the System message field insert the text below, then click "Apply changes".
+>[!alert] In the System message field insert the text below, then click "Apply changes".
 
 ```
 ## Task

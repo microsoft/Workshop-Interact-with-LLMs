@@ -31,7 +31,7 @@ Generate website copy for the homepage of the e-commerce website.
 
 Note that the model is providing a copy for the *Contoso Outdoor Company* website, even if we didn't specify again the company name or business. This is because under-the-hood the model is given the **whole conversation history** as context, not just the latest prompt. An AI model cannot learn and has no memory of previous interactions if the user leaves and comes back, but the application is using prompt engineering to add this 'memory'.
 
-To verify this, try clearing the chat history, enter the prompt again and check how the model's response changes.
+>[!knowledge] To verify this, try clearing the chat history, enter the prompt again and check how the model's response changes.
 
 > [!NOTE]
 > In the Azure AI Studio Playground there's also a **Session Settings** option that allows you to control the context window size, which is the number of previous interactions that the model will consider as context (default is 10).
@@ -56,12 +56,10 @@ Moreover, you can  also instruct your LLM to extract key information from text. 
 
 ### Zero-shot learning
 
-LLMs are trained on such large amounts of data they may be able to perform some tasks with very little prompting. This is known as **zero-shot learning**. For example, now that we have the AI generated website copy, we can ask the model to translate it into a different language to enable localization, using the simple prompt below.
+LLMs are trained on such large amounts of data they may be able to perform some tasks with very little prompting. This is known as **zero-shot learning**. For example, let's ask the model to generate a list of product names and to categorize them:
 
 ```
-Translate the website copy into French.
-English: <AI Generated Website Copy>
-French:
+Create a list of 20 product names this store might sell, include the type of item
 ```
 
 ### Few-shot learning
@@ -81,7 +79,8 @@ AlpineGlow Solar Lantern: EQUIPMENT
 ### Chain of thought prompting
 
 When interacting with LLMs, a useful tip is to imagine that you are speaking to an untrained intern. So the more details you can provide about the task to be performed, the better the results you will get. In particular, a useful strategy is to break down the task into smaller parts and provide a prompt for each part. Let's try this with the website copy generation task.
-Before you start, clear the chat history to avoid any context from previous interactions.
+
+>[!alert] Before you start, clear the chat history to avoid any context from previous interactions.
 
 ```
 You will generate the website copy for the homepage of the Contoso Outdoor Company e-commerce website.
@@ -116,8 +115,6 @@ Always show the word CONTOSO in capital letters.
 
 ## Safety
 In the copies you write always stick to the subject of the company and the products it offers. Avoid any irrelevant information and controversial opinions.
-
-
 ```
 
 Observe that we have provided the model with a **clear task**, a **tone of voice**, and **safety measures** to follow. Your model, like any piece of technology used for business, is like your brand, if you want it to have the same approach and ethics you instill in your code of conduct across the business the it should be included for your AI solutions also. Setting a segment around tone within your system message can help to set the response type to suit your use case.
