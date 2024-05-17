@@ -4,9 +4,7 @@
 > What is prompt engineering?
 > Prompt engineering is a concept in Natural Language Processing (NLP) that involves **embedding descriptions of tasks** in input to **prompt the model** to output the **desired results**.
 
-Welcome to part 1 of this workshop, where we'll be interacting with GPT4-turbo model to generate text. Before starting, make sure your playground is configured as follow:
-- Mode: Chat
-- Deployment: gpt-4-turbo
+Welcome to part 1 of this workshop, where we'll be interacting with GPT-4 Turbo model to generate text.
 
 ## Basic prompting
 
