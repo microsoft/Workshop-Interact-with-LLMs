@@ -9,7 +9,7 @@ Before starting, make sure your playground is configured as follow:
 > [!TIP]
 > **GPT4 turbo with vision** is a multimodal model that incorporates both natural language processing and visual understanding. It is able to process as input a combination of text and images, and generate an output which is relevant to both modalities.
 
-## Generate a code snippet for the website UI from an image
+## Interacting with the model using an Image
 
 From the chat interface, click on the attachment icon to upload a local image and then select the *contoso_outdoor_ecommerce_sketch_notes.jpg* image from the local Desktop folder.
 Folder Path: Documents\Workshop-Interact-with-LLMs\Workshop instructions\Images\contoso_outdoor_ecommerce_sketch_notes.jpg
@@ -20,9 +20,23 @@ If you cannot find the image on the local Desktop of your VM, you can download i
 
 ![Contoso Ecommerce Website UI](./Images/contoso_outdoor_ecommerce_sketch_notes.jpg).
 
-This image represents a sketch of our Contoso Outdoor e-commerce website we want to build. We will use this image as input to GPT4 turbo with vision to generate a code snippet for the website, using the sketch as a reference.
+This image represents a sketch of our Contoso Outdoor e-commerce website we want to build. We will use this image as input to GPT4 turbo with vision to gather information from the image, and later generate a code snippet for the website, using the sketch as a reference.
 
-Once you have uploaded the file, add the text below to instruct the model on how to use the image input:
+Once you have uploaded the file, try these prompts start interacting with the image:
+
+```
+How many products are shown in the homepage below?
+```
+
+```What is the name of the company?```
+
+
+```What is the most expensive product?```
+
+## Generate a code snippet for the website UI from an image
+
+Next, we will prompt the model to generate a code snippet for the website using the sketch as reference. Add the text below to instruct the model on how to use the image input:
+
 ```
 Generate the html and bootstrap code to implement the UI of the Contoso Outdoor Company e-commerce landing page, based on the hand-drawn sketches in the image.
 ```
