@@ -1,13 +1,10 @@
 # Part 3 - Multimodal interfaces
 
-By now we have interacted with LLMs using a single modality: inputting text and receiving either text or images. However, multimodal interfaces are becoming increasingly popular, as they allow users to interact with models using multiple modalities, such as text, images, and speech, thus facilitating human-computer interactions. In this section, we will explore how to use multimodal interfaces to interact with GPT4 turbo with vision.
+By now we have interacted with LLMs using a single modality: inputting text and receiving either text or images. However, multimodal interfaces are becoming increasingly popular, as they allow users to interact with models using multiple modalities, such as text, images, and speech, thus facilitating human-computer interactions. In this section, we will explore how to use multimodal interfaces to interact with GPT-4 Turbo with Vision.
 
-Before starting, make sure your playground is configured as follow:
-- Mode: Chat
-- Deployment: gpt-4-turbo-vision
 
 > [!TIP]
-> **GPT4 turbo with vision** is a multimodal model that incorporates both natural language processing and visual understanding. It is able to process as input a combination of text and images, and generate an output which is relevant to both modalities.
+> **GPT-4 Turbo with Vision** is a multimodal model that incorporates both natural language processing and visual understanding. It is able to process as input a combination of text and images, and generate an output which is relevant to both modalities.
 
 ## Interacting with the model using an Image
 
@@ -20,13 +17,12 @@ If you cannot find the image on the local Desktop of your VM, you can download i
 
 ![Contoso Ecommerce Website UI](./Images/contoso_outdoor_ecommerce_sketch_notes.jpg).
 
-This image represents a sketch of our Contoso Outdoor e-commerce website we want to build. We will use this image as input to GPT4 turbo with vision to gather information from the image, and later generate a code snippet for the website, using the sketch as a reference.
+This image represents a sketch of our Contoso Outdoor e-commerce website we want to build. We will use this image as input to GPT-4 Turbo with Vision to gather information from the image, and later generate a code snippet for the website, using the sketch as a reference.
 
 Once you have uploaded the file, try these prompts start interacting with the image:
 
-```
-How many products are shown in the homepage below?
-```
+```How many products are shown in the homepage below?```
+
 
 ```What is the name of the company?```
 
@@ -47,7 +43,6 @@ If you want to view the code syntax is correct and what the template looks like:
 1. Open VS Code on the VM
 2. File - New file - type website.html (save it to the desktop of the VM)
 3. Paste the HTML code generated into the empty html file
-4. Select VS Code extensions on the left bar, and install 'HTML Preview'
 5. Select the 'Open preview' button on the top right of VS Code to view the output
 
 ![Preview website code in VS Code](./Images/vs-code-view-html.png).

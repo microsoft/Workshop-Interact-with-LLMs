@@ -20,67 +20,92 @@ Let's start by clicking on **Sign In** and entering the following credentials:
 -  User: +++@lab.CloudPortalCredential(User1).Username+++
 -  Password: +++@lab.CloudPortalCredential(User1).Password+++
 
-Now that we are logged in, we can start navigating around the platform. Let's start with the **Explore** tab.
+Now that we are logged in, we can start navigating around the platform. 
 
-### Explore Tab
+## Hub Homepage
 
-In this tab you will find the following fields:
+![Hub Homepage](./Images/ai-studio-hub-homepage.png)
 
-- **Model Catalog**: The model catalog showcases the available models inside Azure AI Studio. You can click and expand on each model for in-depth description of usage and other details.
+You will notice a set of elements once we have logged in and land on the Hub Homepage. 
+
+### 1. Navigation Panel
+
+On the left side of the screen you will see a navigation panel with a group of different tabs.
+
+- **Current Hub, Hub Overview and All Projects**: This tab provides access to the Hub Overview, and a list of all the projects within the Hub.
+- **Get Started**: 
+    - *Model Catalog*: The model catalog showcases the available models inside Azure AI Studio. You can click and expand on each model for in-depth description of usage and other details.
+     - *Model Benchmarks*: Here you can compare benchmarks across models and datasets available, with charts on accuracy, similarity, fluency, coherence, etc.
+    - *Prompt Catalog*: The prompt catalog provides sample prompts for a myriad of common use cases, which can be used to further understand how a model works, and can be customized for specific scenarios.
+    - *AI Services*: In the AI Services tab you can see a list of Azure AI Services available, along with demos, use cases and more.
 
 > [!NOTE]
 > Azure AI Studio hosts some of the most popular foundation models provided by companies such as Microsoft, Open AI, Hugging Face, Meta and Mistral.
 
-- **Model Benchmarks**: Here you can compare benchmarks across models and datasets available, with charts on accuracy, similarity, fluency, coherence, etc.
-- **Prompt Catalog**: The prompt catalog provides sample prompts for a myriad of common use cases, which can be used to further understand how a model works, and can be customized for specific scenarios.
+- **Playgrounds**: The Playgrounds represent a fast and accesible way to interact with the models.
+- **Shared Resources**: This tab provides access to the resources connected or shared by the AI Hub. Here you can acces resources such as the model Deployments, connections to other services, compute instances available in the Hub, user access and content filters applied to our models.
 
-### Build Tab
+### 2. Overview
 
-This tab allows us to manage our assets, permissions, deployments and data settings through the use of **Projects**. A project in Azure AI Studio grants us access to most of the platform's features, such as the **Playground**.
+In this page we are able to see an overview of our Azure AI Studio Hub. This includes the following:
 
-![Image showcasing the Build tab, where a big button reads "New Project" and a message bubble indicates "Start with a Project."](./Images/ai-studio-buildpage.png)
+- **Projects**: A project is a resource within Azure AI Studio that grants us access to most of the platform's features, such as the **Playgrounds**. You will notice we have a project created already. This is intentional and we will be working with it in the upcoming sections.
+- **Description**: A short description of the Azure AI Studio Hub we are in.
+- **Hub Properties**: A collection of various properties such as the Hub's name, its location, resource group, etc. Here we can find useful information such as *API endpoints and keys* and the *subscription's quota*.
+- **Connected Resources**: Azure AI Studio allows for multiple resources to be connected to it, expanding its features and functionality. Resources such as Azure AI Search, or in our case, Azure AI Service further increase the capabilities of our Hub, and grant us access to deployments such as LLMs or functionalities such as vector search.
+- **Permissions**: Allows us to grant access to collaborators or applications that may need to use the services within the Hub.
+ 
+ >[!alert] Click on the existing project to move forward.
+ 
+ ![image showing where to click to access a project](./Images/ai-studio-click-project.png)
 
-You will notice we have a project created already. This is intentional and we will be working with it in the upcopming sections. For now, we will move to the **Manage** tab.
+## Project Overview
 
-### Manage Tab
+The Project overview page is very similar to the Hub overview one, except the details are tied to the project instead of the Hub that hosts it. 
 
-The **Manage** tab allows us to view and edit our hubs inside Azure AI Studio. For this lab, there is a Hub already created, named *Lab 301 AI Hub*. If we click on it we will be able to see the details of the hub, such as the Azure services that connect to it, the resources it uses and the projects it hosts.
+### Navigation Bar
 
-Feel free to explore this details, but we will not be needing to carry out any changes for the lab.
+You will notice the navigation bar has updated with new tabs, which represent functionalities tied to our project. The **Get Started** section remains the same, and **Playgrounds** are expanded to include other versions.
 
-## Azure AI Studio's Playground
+We have two new sections:
+- **Tools**: This includes useful opportunities to expand your project's reach, such as ***working in VS Code*** by running a cloud compute, access to [***Prompt Flow***](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow), development of ***Evaluations*** for your models and the ability to carry ***Fine Tuning*** on your deployments.
+- **Components**: Here you can add complimentary elements to the project, with resources such as ***Data***, ***Indexes***, ***Deployments*** and ***Content Filters*** to be used as part of your work.
 
-We will now move to the Playground, where most of our work will be carried out.
-1. Navigate back to the **Build** tab
-2. On the left panel, click on **Playground**.
+For this lab we will focus on using the **Playgrounds**. Click on the Chat Playground and move on to the next section.
 
-The Playground has different elements we will be interacting with, and as such it will be useful to get familiar with them.
+## Project Playgrounds
 
-![Image of the Azure AI Studio Playground](./Images/ai-studio-playground.png)
+You will notice we have four options for our **Playground**. Each option represents a different approach to interacting and using AI models, which can be tailored to our specific needs.
 
-The most important element to look at is the Playground's **Mode**. This dictates what type of activity and deployment we will be carrying out. For our lab we will only focus on *Chat* and *Images*.
+We will be carrying most of our work in these Playgrounds, but namely in the following two:
+
+- **Chat Playground**
+- **Images Playground**
 
 > [!NOTE]
 > There is also playground modes designed for various type of scenarios, such as Assistants, Completions and others.
 
-### Chat Mode
+### Chat Playground
 
-![Image of Azure AI Studio Playground Chat Mode](./Images/ai-studio-chatmode.png)
+![Image of Azure AI Studio Playground Chat Mode](./Images/ai-studio-playground.png)
 
+1. **Deployments**: This section allows us to change between our deployed models.
 1. **System Message Box**: Here is where we enter instructions for the model, previous to the user interaction.
+1. **Add your data**: Azure AI Studio supports providing the deployed models with external data, allowing for better search and context.
+1. **Parameters**: This tab contains the models detailed settings, such as temperature.
 1. **Chat Box**: The chat box is where we will see our interactions with the model in the form of chat messages.
 1. **Prompt Box**: This is where we type the prompts we want to send to the model.
-1. **Deployments and deployment settings**: This section allows us to change between our deployed models, and set settings around it such as the message history.
-1. **Parameters**: This tab contains the models detailed settings, such as temperature.
 
-### Images Mode
+### Images Playground
 
-![Image of Azure AI Studio Playground Images Mode](./Images/ai-studio-imagemode.png)
+![Image of Azure AI Studio Playground Images Mode](./Images/ai-studio-image-playground.png)
 
 1. **Deployments**: In this drop-down we are able to choose the model to prompt for image generation. These models, just like the chat ones, come from our deployments.
-1. **Prompt Box**: Similar to the chat mode box, this is where the models get their input from the user. In the case of images, descriptions of what we want to generate.
+1. **Prompt Box**: Similar to the chat playground's box, this is where the models get their input from the user. In the case of images, descriptions of what we want to generate.
 1. **Results Box**: Finally, here is where the generated images are displayed.
 
 ## Ready to start
 
-That covers the necessary setup and basics of Azure AI Studio. We will now move forward to begin interacting with the models. Ensure you are back to the **Chat** mode in the Playground, and go to the next section.
+That covers the necessary setup and basics of Azure AI Studio. We will now move forward to begin interacting with the models. 
+
+>[!alert] Go back to the **Chat Playground** and move to Part 1: Text Generation
