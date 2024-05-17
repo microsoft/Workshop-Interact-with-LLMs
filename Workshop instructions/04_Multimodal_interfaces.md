@@ -31,7 +31,9 @@ Once you have uploaded the file, try these prompts start interacting with the im
 
 ## Generate a code snippet for the website UI from an image
 
-Next, we will prompt the model to generate a code snippet for the website using the sketch as reference. Add the text below to instruct the model on how to use the image input:
+Next, we will prompt the model to generate a code snippet for the website using the sketch as reference. 
+1. Go to the **Parameters** tab and set the *Max Response* to 4000.
+1.Add the text below to instruct the model on how to use the image input:
 
 ```
 Generate the html and bootstrap code to implement the UI of the Contoso Outdoor Company e-commerce landing page, based on the hand-drawn sketches in the image.
@@ -40,14 +42,13 @@ Generate the html and bootstrap code to implement the UI of the Contoso Outdoor 
 The outcome should provide a basic layout for the landing page of Contoso Outdoor Company. It includes placeholders for product descriptions, which you can populate with the text and image artifacts created throughout part 1 and 2.
 
 If you want to view the code syntax is correct and what the template looks like:
-1. Open VS Code on the VM
-2. File - New file - type website.html (save it to the desktop of the VM)
-3. Paste the HTML code generated into the empty html file
-5. Select the 'Open preview' button on the top right of VS Code to view the output
+1. Open VS Code.
+2. File - New file - type website.html and save it to the Desktop.
+3. Paste the HTML code generated into the empty html file.
+5. Select the **Open Preview to the Side** button on the top right of VS Code to view the output.
 
-![Preview website code in VS Code](./Images/vs-code-view-html.png).
+![Preview website code in VS Code](./Images/vs-code-view-html.png)
 
-Feel free to use the remaining time to adjust the code template according to the final design you wish to achieve.
 
 ## Apply Prompt Tuning
 
@@ -72,5 +73,7 @@ Instructions:
 2. Use html and bootstrap as output format
 3. Add placeholders for products images
 ```
+
+Copy the new HTML, navigate back to **Visual Studio Code** and replace the old html with the new one. Notice any differences? Feel free to adjust the code template according to the final design you wish to achieve.
 
 Congratulations! You have now completed the 3rd and last part of the lab and you learnt how to interact with multimodal models. Click next to wrap up the lab.
