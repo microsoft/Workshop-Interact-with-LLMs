@@ -4,16 +4,13 @@
 > What is prompt engineering?
 > Prompt engineering is a concept in Natural Language Processing (NLP) that involves **embedding descriptions of tasks** in input to **prompt the model** to output the **desired results**.
 
-Welcome to part 1 of this workshop, where we'll be interacting with GPT-4 Turbo model to generate text.
+Welcome to Part 1 of this workshop, where we'll be interacting with GPT-4 Turbo model to generate text.
 
 ## Basic prompting
 
 Let's start with a few prompts and observe the response using the chat interface.
 
 Here are some examples to try, but get creative with your own prompts and see what happens!
-
-> [!NOTE]
-> Open the Notepad app in the VM and copy the model's responses you get at each step. You'll need to include them in later prompts.
 
 ### Website copy and conversation history
 
@@ -32,7 +29,7 @@ Note that the model is providing a copy for the *Contoso Outdoor Company* websit
 >[!knowledge] To verify this, try clearing the chat history, enter the prompt again and check how the model's response changes.
 
 > [!NOTE]
-> In the Azure AI Studio Playground there's also a **Session Settings** option that allows you to control the context window size, which is the number of previous interactions that the model will consider as context (default is 10).
+> You can control the context window size, which is the number of previous interactions that the model will consider as context (default is 10) by going into the **Parameters** tab.
 
 ### Summarization and key entities extraction
 
@@ -51,6 +48,8 @@ Moreover, you can  also instruct your LLM to extract key information from text. 
 ```
 
 ## Advanced prompting
+
+>[!alert] Before moving on with the next section, click on the **Clear Chat** button to clear the message history.
 
 ### Zero-shot learning
 
@@ -76,9 +75,10 @@ AlpineGlow Solar Lantern: EQUIPMENT
 
 ### Chain of thought prompting
 
+>[!alert] Before you start, click on **Clear Chat** to avoid any context from previous interactions.
+
 When interacting with LLMs, a useful tip is to imagine that you are speaking to an untrained intern. So the more details you can provide about the task to be performed, the better the results you will get. In particular, a useful strategy is to break down the task into smaller parts and provide a prompt for each part. Let's try this with the website copy generation task.
 
->[!alert] Before you start, clear the chat history to avoid any context from previous interactions.
 
 ```
 You will generate the website copy for the homepage of the Contoso Outdoor Company e-commerce website.
@@ -135,12 +135,14 @@ The model will refrain from answering this (as it is both irrelevant to the comp
 
 ### Grounded prompting
 
+>[!alert] Ensure to **Clear Chat** before moving on with the section.
+
 In the website copy we have generated so far, the model has been creative in inventing a business value proposition and product offering. However, in real-world scenarios, we want the model to generate text that is grounded in reality and reflects the actual business. To achieve this, we can use a technique called **Retrieval Augmented Generation (RAG)**. This technique involves providing the model with a set of facts or information about the business, which the model can then use to generate more accurate and relevant text.
 
 > [!NOTE]
 > **Retrieval-Augmented Generation (RAG)** is an AI technique that combines a language model with a search system to provide more accurate and detailed information. In a RAG pattern, the system usually retrieves relevant information from a database and then uses it to help generate more informed and contextually accurate text responses. For the sake of this lab, we will simulate the retrieval process, by providing the model with a set of facts about the business in the prompt.
 
-Added knowledge can be provided always through the System message. So, let's add to the current System message the information below, and then click "Apply changes".
+Added knowledge can be provided always through the System message. So, let's add to the current System message the information below, and then click **Apply changes**.
 
 ```
 ## Business Information
