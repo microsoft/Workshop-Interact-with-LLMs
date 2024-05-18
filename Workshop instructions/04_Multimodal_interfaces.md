@@ -6,6 +6,23 @@ By now we have interacted with LLMs using a single modality: inputting text and 
 > [!TIP]
 > **GPT-4 Turbo with Vision** is a multimodal model that incorporates both natural language processing and visual understanding. It is able to process as input a combination of text and images, and generate an output which is relevant to both modalities.
 
+## Best Practices
+
+- **Contextual specificity**: Adding context to the scenario at hand gives the model a better understanding of an appropriate output. This level of specificity aids in focusing on relevant aspects and avoiding extraneous details.​
+
+- **Task-oriented prompts**: Focusing on a specific task helps the model to develop the output while taking that perspective into consideration.​
+
+- **Define output format**: Clearly mention the desired format for the output, such as markdown, JSON, HTML, etc. You can also suggest a specific structure, length, or specific attributes about the response.​
+
+- **Handling refusals**: When the model indicates an inability to perform a task, refining the prompt can be an effective solution. More specific prompts can guide the model towards a clearer understanding and better execution of the task. Some tips to keep in mind:​
+    - Request explanations for generated responses to enhance transparency in the model's output​
+    - If using a single-image prompt, place the image before the text​
+    - Ask the model to describe the image in details first and complete your specific task from the description​
+
+- **Prompt Tuning**: Try prompt tuning techniques that we explored for text generation scenarios such as:​
+    - Breaking down requests (e.g. chain of thoughts)​
+    - Adding examples (e.g. few shot learning)​
+
 ## Interacting with the model using an Image
 
 From the chat interface, click on the attachment icon to upload a local image and then select the *contoso_outdoor_ecommerce_sketch_notes.jpg* image from the local Desktop folder.
