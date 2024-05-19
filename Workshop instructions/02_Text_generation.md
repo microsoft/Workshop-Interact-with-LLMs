@@ -66,10 +66,10 @@ If zero-shot learning is failing for your examples and more complex tasks, **few
 Create a list of 10 product names the Contoso Outdoor shop might sell, include the type of item.
 
 Examples:  
-RidgeRunner Pro Trekking Poles :EQUIPMENT  
-SummitShield 3-Season Tent :EQUIPMENT  
-CascadeTech StormProof Jacket :APPAREL  
-TerraFirm 40L Daypack : EQUIPMENT  
+RidgeRunner Pro Trekking Poles: EQUIPMENT  
+SummitShield 3-Season Tent: EQUIPMENT  
+CascadeTech StormProof Jacket: APPAREL  
+TerraFirm 40L Daypack: EQUIPMENT  
 AlpineGlow Solar Lantern: EQUIPMENT
 ```
 
@@ -114,7 +114,7 @@ Your answer should be brief and engaging. Always use a friendly and professional
 Always show the word CONTOSO in capital letters.
 
 ## Safety
-In the copies you write always stick to the subject of the company and the products it offers. Avoid any irrelevant information and controversial opinions.
+In the copy you write always stick to the subject of the company and the products it offers. Avoid any irrelevant information and controversial opinions.
 ```
 
 Observe that we have provided the model with a **clear task**, a **tone of voice**, and **safety measures** to follow. Your model, like any piece of technology used for business, is like your brand, if you want it to have the same approach and ethics you instill in your code of conduct across the business the it should be included for your AI solutions also. Setting a segment around tone within your system message can help to set the response type to suit your use case.
@@ -144,7 +144,7 @@ In the website copy we have generated so far, the model has been creative in inv
 > [!NOTE]
 > **Retrieval-Augmented Generation (RAG)** is an AI technique that combines a language model with a search system to provide more accurate and detailed information. In a RAG pattern, the system usually retrieves relevant information from a database and then uses it to help generate more informed and contextually accurate text responses. For the sake of this lab, we will simulate the retrieval process, by providing the model with a set of facts about the business in the prompt.
 
-Added knowledge can be provided always through the System message. So, let's add to the current System message the information below, and then click **Apply changes**.
+Added knowledge can be provided always through the System message. So, let's add to the current System message. Insert the information below at the end of the existing System Prompt, and then click **Apply changes**.
 
 ```
 ## Business Information

@@ -53,7 +53,7 @@ On the left side of the screen you will see a navigation panel with a group of d
 - **Playgrounds**: The Playgrounds represent a fast and accesible way to interact with the models.
 - **Shared Resources**: This tab provides access to the resources connected or shared by the AI Hub. Here you can acces resources such as the model Deployments, connections to other services, compute instances available in the Hub, user access and content filters applied to our models.
 
-### 2. Overview
+### 2. Hub Overview
 
 In this page we are able to see an overview of our Azure AI Studio Hub. This includes the following:
 
@@ -97,7 +97,7 @@ We will be carrying most of our work in these Playgrounds, but namely in the fol
 
 ![Image of Azure AI Studio Playground Chat Mode](./Images/ai-studio-playground.png)
 
-1. **Deployments**: This section allows us to change between our deployed models.
+1. **Deployment**: This section allows us to change between our deployed models.
 1. **System Message Box**: Here is where we enter instructions for the model, previous to the user interaction.
 1. **Add your data**: Azure AI Studio supports providing the deployed models with external data, allowing for better search and context.
 1. **Parameters**: This tab contains the models detailed settings, such as temperature.
