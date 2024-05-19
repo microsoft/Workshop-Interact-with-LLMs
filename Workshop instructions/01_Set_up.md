@@ -16,7 +16,7 @@ For this workshop we will be working on Azure AI Studio, especially focusing on 
 
 ## Navigating Azure AI Studio
 
-Let's start by clicking on **Sign In** and entering the following credentials:
+Let's start by clicking on **Sign In**, you can find the the sign in link in the top right of the window, and entering the following credentials:
 -  User: +++@lab.CloudPortalCredential(User1).Username+++
 -  Password: +++@lab.CloudPortalCredential(User1).Password+++
 
