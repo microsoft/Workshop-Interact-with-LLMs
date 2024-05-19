@@ -26,8 +26,6 @@ Generate website copy for the homepage of the e-commerce website.
 
 Note that the model is providing a copy for the *Contoso Outdoor Company* website, even if we didn't specify again the company name or business. This is because under-the-hood the model is given the **whole conversation history** as context, not just the latest prompt. An AI model cannot learn and has no memory of previous interactions if the user leaves and comes back, but the application is using prompt engineering to add this 'memory'.
 
->[!knowledge] To verify this, try clearing the chat history, enter the prompt again and check how the model's response changes.
-
 > [!NOTE]
 > You can control the context window size, which is the number of previous interactions that the model will consider as context (default is 10) by going into the **Parameters** tab.
 
@@ -56,16 +54,18 @@ Moreover, you can  also instruct your LLM to extract key information from text. 
 LLMs are trained on such large amounts of data they may be able to perform some tasks with very little prompting. This is known as **zero-shot learning**. For example, let's ask the model to generate a list of product names and to categorize them:
 
 ```
-Create a list of 20 product names this store might sell, include the type of item
+Create a list of 10 product names the Contoso Outdoor shop might sell, include the type of item.
 ```
+>[!alert] Before moving on with the next section, click on the **Clear Chat** button to clear the message history.
 
 ### Few-shot learning
 
-If zero-shot learning is failing for your examples and more complex tasks, **few shot prompting** can provide examples that can better steer the model to the desired outcomes. Examples show the model cleanly how we want it to operate. Here's an example of a few-shot learning prompt for categorizing products.
+If zero-shot learning is failing for your examples and more complex tasks, **few shot prompting** can provide examples that can better steer the model to the desired outcomes. Examples show the model clearly how we want it to operate. Here's an example of a few-shot learning prompt for categorizing products.
 
 ```
-Create a list of 20 product names this store might sell include the type of item:  
-  
+Create a list of 10 product names the Contoso Outdoor shop might sell, include the type of item.
+
+Examples:  
 RidgeRunner Pro Trekking Poles :EQUIPMENT  
 SummitShield 3-Season Tent :EQUIPMENT  
 CascadeTech StormProof Jacket :APPAREL  
@@ -97,6 +97,8 @@ Take a step-by-step approach in your response, include a welcome message, a brie
 ```
 
 ## System message and added knowledge
+
+>[!alert] Before moving on with the next section, click on the **Clear Chat** button to clear the message history.
 
 ### System message
 
