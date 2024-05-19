@@ -34,7 +34,7 @@ Then select **Generate** and view the image that is generated.
 Now, let's modify the prompt by adding more details to the description:
 
 
-```A purple elephant on a skateboard performing an olley, in the style of of Picasso```
+```A purple elephant on a skateboard performing an olley, in the style of Picasso```
 
 
 Select **Generate** once again and compare the results.
@@ -144,8 +144,10 @@ The TrailMaster X4 Tent is backed by a 2-year limited warranty and supported by 
 
 ![Image of copying option](./Images/ai-studio-copy-response.png)
 
-3. Navigate back to the Images playground, and paste the generated prompt into the **Prompt Box**.
+3. Navigate back to the Images playground.
 
-4. Click **Generate** and notice how detailed the image comes out to be.
+4. **Ensure that 'dall-e-3' is selected under Deployments**, and paste the generated prompt into the **Prompt Box**.
+
+5. Click **Generate** and notice how detailed the image comes out to be.
 
 Congratulations! You have now completed the second part of the lab, and have generated the necessary image assets for the Contoso Outdoors Company e-commerce website.
