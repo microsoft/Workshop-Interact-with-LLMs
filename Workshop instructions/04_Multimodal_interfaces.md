@@ -81,7 +81,7 @@ If you are not satisfied with the result you got in the previous step, you can a
 You are a web designer for the Contoso Outdoor Company e-commerce website. Your goal is to generate the website code snippets for the homepage GUI.
 ```
 
-In addition, let's modify the previous query, by breaking down the instructions into smaller steps. This will help the model to better understand the task and generate more accurate results. Clear the chat history and send the following text to the chat interface:
+In addition, let's modify the previous query, by breaking down the instructions into smaller steps. This will help the model to better understand the task and generate more accurate results. Clear the chat history. Upload the picture again and send the following text to the chat interface:
 
 ```
 You will generate the website GUI template for the homepage of the e-commerce website.
