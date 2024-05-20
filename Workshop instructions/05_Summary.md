@@ -8,7 +8,6 @@ Well done! You made it to the end of the workshop and successfully built an e-co
 - Prompt engineering is a technique for "grounding" generative AI models, and can be used to influence the style of a model's output, provide factual information, and constrain unintended behavior.
 
 ## Additional Resources
-
 Here are a few resources to help you take that next step in learning more about Azure OpenAI Service and Azure AI Studio:
 
 - [Apply for access](https://aka.ms/oaiapply/?WT.mc_id=aiml-132569-cacaste) to Azure Open AI Service with a use case
