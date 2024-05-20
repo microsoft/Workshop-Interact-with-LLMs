@@ -16,7 +16,7 @@ For this workshop we will be working on Azure AI Studio, especially focusing on 
 
 ## Navigating Azure AI Studio
 
-Let's start by clicking on **Sign In**, you can find the the sign in link in the top right of the window, and entering the following credentials:
+Let's start by clicking on **Sign In**, you can find the sign in link in the top right of the window, and entering the following credentials:
 -  User: +++@lab.CloudPortalCredential(User1).Username+++
 -  Password: +++@lab.CloudPortalCredential(User1).Password+++
 
@@ -50,12 +50,12 @@ On the left side of the screen you will see a navigation panel with a group of d
 > [!NOTE]
 > Azure AI Studio hosts some of the most popular foundation models provided by companies such as Microsoft, Open AI, Hugging Face, Meta and Mistral.
 
-- **Playgrounds**: The Playgrounds represent a fast and accesible way to interact with the models.
-- **Shared Resources**: This tab provides access to the resources connected or shared by the AI Hub. Here you can acces resources such as the model Deployments, connections to other services, compute instances available in the Hub, user access and content filters applied to our models.
+- **Playgrounds**: The Playgrounds represent a fast and accessible way to interact with the models.
+- **Shared Resources**: This tab provides access to the resources connected or shared by the AI Hub. Here you can access resources such as the model Deployments, connections to other services, compute instances available in the Hub, user access and content filters applied to our models.
 
 ### 2. Hub Overview
 
-In this page we are able to see an overview of our Azure AI Studio Hub. This includes the following:
+On this page, we can see an overview of our Azure AI Studio Hub. This includes the following:
 
 - **Projects**: A project is a resource within Azure AI Studio that grants us access to most of the platform's features, such as the **Playgrounds**. You will notice we have a project created already. This is intentional and we will be working with it in the upcoming sections.
 - **Description**: A short description of the Azure AI Studio Hub we are in.
@@ -69,7 +69,7 @@ In this page we are able to see an overview of our Azure AI Studio Hub. This inc
 
 ## Project Overview
 
-The Project overview page is very similar to the Hub overview one, except the details are tied to the project instead of the Hub that hosts it. 
+The Project overview page is very similar to the Hub Overview, except the details are tied to the project instead of the Hub that hosts it. 
 
 ### Navigation Bar
 

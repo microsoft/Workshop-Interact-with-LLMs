@@ -17,11 +17,11 @@ By now we have interacted with LLMs using a single modality: inputting text and 
 - **Handling refusals**: When the model indicates an inability to perform a task, refining the prompt can be an effective solution. More specific prompts can guide the model towards a clearer understanding and better execution of the task. Some tips to keep in mind:​
     - Request explanations for generated responses to enhance transparency in the model's output​
     - If using a single-image prompt, place the image before the text​
-    - Ask the model to describe the image in details first and complete your specific task from the description​
+    - Ask the model to describe the image in detail first and complete your specific task from the description​
 
 - **Prompt Tuning**: Try prompt tuning techniques that we explored for text generation scenarios such as:​
     - Breaking down requests (e.g. chain of thoughts)​
-    - Adding examples (e.g. few shot learning)​
+    - Adding examples (e.g. few-shot learning)​
 
 ## Interacting with the model using an Image
 
@@ -36,7 +36,7 @@ If you cannot find the image on the local Desktop of your VM, you can download i
 
 This image represents a sketch of our Contoso Outdoor e-commerce website we want to build. We will use this image as input to GPT-4 Turbo with Vision to gather information from the image, and later generate a code snippet for the website, using the sketch as a reference.
 
-Once you have uploaded the file, try these prompts start interacting with the image:
+Once you have uploaded the file, try these prompts to start interacting with the image:
 
 ```How many products are shown in the homepage below?```
 
@@ -48,7 +48,7 @@ Once you have uploaded the file, try these prompts start interacting with the im
 
 ## Generate a code snippet for the website UI from an image
 
-Next, we will prompt the model to generate a code snippet for the website using the sketch as reference. 
+Next, we will prompt the model to generate a code snippet for the website using the sketch as a reference.
 1. Go to the **Parameters** tab and set the *Max Response* to 4000.
 1.Add the text below to instruct the model on how to use the image input:
 
@@ -62,7 +62,7 @@ If you want to view the code syntax is correct and what the template looks like:
 1. Open VS Code.
 2. File - New file - type website.html and save it to the Desktop.
 3. Paste the HTML code generated into the empty html file.
-5. Select the **Open Preview to the Side** button on the top right of VS Code to view the output.
+4. Select the **Open Preview to the Side** button on the top right of VS Code to view the output.
 
 ![Preview website code in VS Code](./Images/vs-code-view-html.png)
 

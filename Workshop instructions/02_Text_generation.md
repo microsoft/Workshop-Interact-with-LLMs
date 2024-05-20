@@ -33,12 +33,12 @@ Note that the model is providing a copy for the *Contoso Outdoor Company* websit
 
 The resulting copy we have got from the previous step is already a good starting point, but it might be too long for a landing page. Let's try to get a shorter version of it.
 
-Text summarization is a well known capability of Large Language Models (LLMs). It creates a short summary of a larger piece of text. 
+Text summarization is a well-known capability of Large Language Models (LLMs). It creates a short summary of a larger piece of text.
 
 > [!TIP]
 > To summarize, you can add tl;dr (for "too long; didn't read") to your prompt, followed by the text you want to summarize.
 
-Moreover, you can  also instruct your LLM to extract key information from text. In our scenario, this is useful to get keywords for **SEO optimization**.  Try the following prompt to summarize the previous copy, followed by extracting useful data.
+Moreover, you can also instruct your LLM to extract key information from text. In our scenario, this is useful to get keywords for **SEO optimization**.  Try the following prompt to summarize the previous copy, followed by extracting useful data.
 
 ```
 1. tl;dr
@@ -60,7 +60,7 @@ Create a list of 10 product names the Contoso Outdoor shop might sell, include t
 
 ### Few-shot learning
 
-If zero-shot learning is failing for your examples and more complex tasks, **few shot prompting** can provide examples that can better steer the model to the desired outcomes. Examples show the model clearly how we want it to operate. Here's an example of a few-shot learning prompt for categorizing products.
+If zero-shot learning is failing for your examples and more complex tasks, **few-shot prompting** can provide examples that can better steer the model to the desired outcomes. Examples show the model clearly how we want it to operate. Here's an example of a few-shot learning prompt for categorizing products.
 
 ```
 Create a list of 10 product names the Contoso Outdoor shop might sell, include the type of item.
@@ -117,7 +117,7 @@ Always show the word CONTOSO in capital letters.
 In the copy you write always stick to the subject of the company and the products it offers. Avoid any irrelevant information and controversial opinions.
 ```
 
-Observe that we have provided the model with a **clear task**, a **tone of voice**, and **safety measures** to follow. Your model, like any piece of technology used for business, is like your brand, if you want it to have the same approach and ethics you instill in your code of conduct across the business the it should be included for your AI solutions also. Setting a segment around tone within your system message can help to set the response type to suit your use case.
+Observe that we have provided the model with a **clear task**, a **tone of voice**, and **safety measures** to follow. Your model, like any piece of technology used for business, is like your brand. If you want it to have the same approach and ethics you instill in your code of conduct across the business, it should also be included in your AI solutions. Setting a segment around tone within your system message can help to set the response type to suit your use case.
 
 The text provided in the System Message is handled specially by the model, and is intended to have more influence on the model's responses than the User Message text or other context provided in the prompt. Also, it is persisted across all the interactions in the chat, even if you clear the chat history.
 
@@ -133,7 +133,7 @@ You will see that not only does the model respond with the requested information
 What are your thoughts on the upcoming election?
 ```
 
-The model will refrain from answering this (as it is both irrelevant to the company and could be deemed controversial), and sticks to the subject of the company and its products.
+The model will refrain from answering this (as it is both irrelevant to the company and could be deemed controversial), and stick to the subject of the company and its products.
 
 ### Grounded prompting
 
