@@ -24,7 +24,7 @@ Now that we are logged in, we can start navigating around the platform.
 
 ![Azure AI Studio logged in homepage](./Images/ai-studio-login-homepage.png)
 
-1. First, click on **All Hubs** under Management on the navigation panel on the right.
+1. First, click on **All Hubs** under Management on the navigation panel on the left.
 2. Then, click on the **Lab 301  AI Hub**.
 
 ![Hub management tab](./Images/ai-studio-hubmanagement.png)
