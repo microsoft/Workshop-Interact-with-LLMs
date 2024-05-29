@@ -1,1 +1,0 @@
-Workshop instructions for china
